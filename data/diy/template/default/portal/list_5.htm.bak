@@ -1,0 +1,40 @@
+<!--{template common/header}-->
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+<div class="blank25"></div>
+<div class="container">
+	<div class="index_pd cl">
+		<div class="index_left fl">
+			<!--龙舟新闻 start-->
+			<div class="widget new_main">
+				<div class="widget_hd">$cat[catname]<a class="more_s" href="javascript:void(0);"></a></div>
+					<ul class="in_newlist">
+						<!--{loop $list['list'] $value}-->				
+						<!--{eval $article_url = fetch_article_url($value);}-->
+						<li>
+							<!--{if $value[pic]}--><a href="$article_url" class="thumb" target="_blank"><img src="$value[pic]"></a><!--{/if}-->
+							<div class="info_rs">
+								<h3 class="title"><a href="$article_url" target="_block">$value[title]</a></h3>
+								<p class="intro">$value[dateline]</p>
+								<span class="posttime">2015-10-10</span>
+								<span class="author">作者：$value[username]</span>
+							</div>
+						</li>
+						<!--{/loop}-->                 
+					</ul>
+				</div>
+			<!--龙舟新闻 end-->
+			<!--{if $list['multi']}-->
+			<!--加载更多 start-->
+			<!-- <div class="more_page"><a href="javascript:void(0);" class="ajax_more">加载更多</a></div> -->
+			<div class="more_page" totalpage="$maxpages">{$list['multi']}</div>
+			<!--加载更多 end-->
+			<!--{/if}-->
+		</div>
+		<div class="index_right fr">
+		<!--[diy=diy1]--><div id="diy1" class="area"><div id="frame4semYc" class="frame move-span cl frame-1"><div id="frame4semYc_left" class="column frame-1-c"><div id="frame4semYc_left_temp" class="move-span temp"></div><!--{block/21}--><!--{block/22}--></div></div></div><!--[/diy]-->	
+		</div>
+	</div>
+</div>
+<!--{template common/footer}-->

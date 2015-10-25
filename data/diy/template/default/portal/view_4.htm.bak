@@ -1,0 +1,24 @@
+<!--{template common/header}-->
+<div class="blank25"></div>
+<div class="container">
+     <div class="index_pd cl">
+          <div class="detail_l fl">
+               <h1 class="deta_tit">$article[title]</h1>
+               <div class="titleDown cl">
+                    <span class="tit">$article[dateline]</span>
+                    <span class="tit">作者：$article[username]</span>
+                    <div class="tit fenx"></div>
+               </div>
+               <div class="deta_content">
+                   $content[content]
+               </div>
+               <!--{if !empty($download_url)}-->
+               <div class="deta_download"><a href="$download_url">资料下载</a></div>
+               <!--{/if}-->
+          </div>
+          <div class="index_right fr">
+          <!--[diy=diy1]--><div id="diy1" class="area"><div id="frameWH7h7D" class="frame move-span cl frame-1"><div id="frameWH7h7D_left" class="column frame-1-c"><div id="frameWH7h7D_left_temp" class="move-span temp"></div><!--{block/32}--><!--{block/33}--><!--{block/34}--></div></div></div><!--[/diy]-->
+          </div>
+     </div>
+</div>
+<!--{template common/footer}-->
