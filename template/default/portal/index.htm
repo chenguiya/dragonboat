@@ -1,0 +1,45 @@
+<!--{template common/header}-->
+<style id="diy_style" type="text/css"></style>
+<div class="blank25"></div>
+<div class="content">
+	<div class="index_pd cl">
+		<!--轮播 start-->
+		<div class="fullSlide" id="indexBanner">
+		<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+		</div>
+		<!--轮播 end-->
+		<!--协会公告 start-->
+		<div class="widget in_notice">
+			<div class="widget_hd">协会公告<a class="more_s" href=""></a></div>
+			<ul class="widget_bd in_notice_bd">
+			<!--[diy=diy2]--><div id="diy2" class="area"></div><!--[/diy]-->                   
+			</ul>
+		</div>
+		<!--协会公告 end-->
+	</div>
+     <!--龙舟之队 start-->
+     <!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->     
+     <!--龙舟之队 end-->
+     <div class="index_pd cl">
+          <div class="index_left fl">
+               <!--龙舟新闻 start-->
+               <!--[diy=diy4]--><div id="diy4" class="area"></div><!--[/diy]-->               
+               <!--龙舟新闻 end-->
+               <!--加载更多 start-->
+               <div class="more_page"><a href="javascript:void(0);" class="ajax_more">加载更多</a></div>
+               <!--加载更多 end-->
+          </div>
+          <div class="index_right fr">
+               <!--比赛公告 start-->
+               <div class="widget widcom">
+                    <div class="widget_hd">比赛公告<a class="more_s" href=""></a></div>
+                    <p class="widget_bd rule_img"><img src="{$_G['style'][tpldir]}/common/images/300.jpg" width="300" height="170"></p>
+               </div>
+               <!--比赛公告 end-->
+               <!--[diy=diy5]--><div id="diy5" class="area"></div><!--[/diy]-->                  
+          </div>
+          
+     </div>
+</div>
+<script src="misc.php?mod=diyhelp&action=get&type=index&diy=yes&r={echo random(4)}" type="text/javascript"></script>
+<!--{template common/footer}-->

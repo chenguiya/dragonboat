@@ -1,0 +1,27 @@
+<!--{template common/header}-->
+<!--[name]{lang portalcategory_listtplname}[/name]-->
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+<div class="blank25"></div>
+<div class="container">
+	<ul class="picture_list cl">
+	<!--{loop $list['list'] $value}-->				
+				<!--{eval $article_url = fetch_article_url($value);}-->
+	<li>
+		<a class="col_pic" href="$article_url" target="_blank">
+		   <!--{if $value[pic]}--><p class="pic_img"><img src="$value[pic]" width="300" height="170" border="0"><span class="icon_v"></span></p><!--{/if}-->
+		   <p class="pic_name">$value[title]</p>
+		   <p class="pic_time">$value[dateline]</p>
+		</a>
+	</li>
+	<!--{/loop}-->
+	</ul>
+	<!--{if $list['multi']}-->
+	<!--加载更多 start-->
+	<!-- <div class="more_page"><a href="javascript:void(0);" class="ajax_more">加载更多</a></div> -->
+	<div class="more_page">{$list['multi']}</div>
+	<!--加载更多 end-->
+	<!--{/if}-->
+</div>
+<!--{template common/footer}-->

@@ -674,3 +674,12 @@
 <?PHP exit;?>	1445787076	longzhou_admin	1	127.0.0.1	tools	GET={operation=updatecache; }; POST={};
 <?PHP exit;?>	1445787077	longzhou_admin	1	127.0.0.1	tools	GET={operation=updatecache; step=2; type={0=data; 1=tpl; }; confirmed=确定; }; POST={type={0=data; 1=tpl; }; confirmed=确定; };
 <?PHP exit;?>	1445787079	longzhou_admin	1	127.0.0.1	tools	GET={operation=updatecache; step=3; type=data_tpl; }; POST={};
+<?PHP exit;?>	1445870839	longzhou_admin	1	::1		GET={}; POST={};
+<?PHP exit;?>	1445870841	longzhou_admin	1	::1		GET={frames=yes; admin_username=longzhou_admin; }; POST={frames=yes; admin_username=longzhou_admin; };
+<?PHP exit;?>	1445870845	longzhou_admin	1	::1	index	GET={}; POST={};
+<?PHP exit;?>	1445870849	longzhou_admin	1	::1	members	GET={operation=search; }; POST={};
+<?PHP exit;?>	1445870852	longzhou_admin	1	::1	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1445870853	longzhou_admin	1	::1	members	GET={operation=search; }; POST={};
+<?PHP exit;?>	1445870856	longzhou_admin	1	::1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1445870857	longzhou_admin	1	::1	nav	GET={}; POST={};
+<?PHP exit;?>	1445870866	longzhou_admin	1	::1	nav	GET={operation=headernav; do=edit; id=49; }; POST={};
